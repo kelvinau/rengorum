@@ -97,18 +97,18 @@ Activate virtual environment
 
 ```
 cd backend
-source venv/bin/activate
+source venv/bin/activate (windows: venv/Scripts/activate.bat)
 ```
 
 (Optional) Run test
 ```
-python manage.py test
+python3 manage.py test
 ```
 
 Then run the server, api endpoint should be available on http://localhost:8000/api
 
 ```
-python manage.py runserver
+python3 manage.py runserver
 ```
 
 ## Running Frontend on Local Server
@@ -127,7 +127,7 @@ By default, the database for development server in `backend/db.sqlite3` is alrea
 
 If you want to start clean. Delete `db.sqlite3` and follow this step in `backend folder`
 ```py
-python manage.py makemigrations
-python manage.py migrate
-python manage.py createsuperuser
+python3 manage.py makemigrations
+python3 manage.py migrate
+python3 manage.py createsuperuser
 ```
