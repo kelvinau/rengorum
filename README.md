@@ -71,8 +71,8 @@ Install all required dependencies in an isolated environment
 ```
 cd rengorum/backend
 python3 -m venv venv
-source venv/bin/activate
-pip install -r requirements.txt
+source venv/bin/activate (windows: venv/Scripts/activate.bat)
+pip3 install -r requirements.txt
 ```
 
 Copy the `.env.example` as `.env` in `backend` folder
